@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    overflow-y: hidden;
+}
+.text{
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+.light {
+    height: 80vh;
+    width: 70vw;
+    margin: 5rem auto;
+    background: url('assets/Img_1.png');
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+}
+
+.animebg {
+    height: 140px;
+    width: 500%;
+    background: url('assets/Img_02.png');
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+
+}
+
+.car {
+    position: absolute;
+    bottom: 8%;
+    left: 25%;
+    
+}
+
+/* animation */
+@keyframes movebg {
+    100% {
+        transform: translateX(-2950px);
+    }
+}
+
+@keyframes car {
+    100% {
+        transform: translateY(-1px);
+    }
+
+    50% {
+        transform: translateY(1px);
+    }
+
+    0% {
+        transform: translateY(-1px);
+    }
+}
+.carjump{
+    animation: car 1s infinite;
+}
+
+.movebg {
+    animation: movebg 6s linear infinite;
+}
